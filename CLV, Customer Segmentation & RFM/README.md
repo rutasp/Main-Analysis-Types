@@ -11,7 +11,8 @@ To calculate weekly and cumulative CLV for all website users (not just buyers), 
 
 ## 🛠️ Tools & Technologies
 
-- **SQL (BigQuery)** – for cohort creation and revenue aggregation  
+- **SQL (BigQuery)** – for cohort creation and revenue aggregation
+- **Tableau** –  [RFM project](https://public.tableau.com/app/profile/ruta.spaicyte/viz/RFMproject_17265189273120/Dashboard1)
 - **Google Sheets / Excel** – for visualization, formatting, and forecasting  
 - **Conditional Formatting & Charts** – for clearer analysis and insight discovery
 
