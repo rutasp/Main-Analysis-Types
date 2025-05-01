@@ -6,6 +6,8 @@ This project focuses on building a **sales funnel chart** from website event dat
 
 To extract and visualize a clear, de-duplicated funnel from raw user events, comparing conversion performance across the **top 3 countries** by event volume. This will help surface actionable insights into user behavior and potential UX or performance issues.
 
+![image](https://github.com/user-attachments/assets/9abff9e2-e4d1-4f66-b1cf-c52a6073f56c)
+
 ## 🛠️ Tools & Technologies
 
 - **SQL (BigQuery)** – for event cleaning and funnel data aggregation  
@@ -51,9 +53,4 @@ To extract and visualize a clear, de-duplicated funnel from raw user events, com
 - Analytical explanation of results and drop-off rates  
 - Well-formatted output for easy review and stakeholder sharing
 
-## ❓ Sample Review Questions
 
-- How did you define and validate funnel events?
-- How did you eliminate duplicated events?
-- What trends stood out across countries?
-- What business improvements could this data inform?
