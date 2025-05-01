@@ -37,3 +37,74 @@ WITH aggregated_sales AS (
   GROUP BY location_id, promotion
 )
 SELECT * FROM aggregated_sales;
+```
+---
+
+## Explanation:
+
+```avg_sales```: Average weekly sales for each store under a specific promotion.
+
+```total_sales```: Cumulative sales across all weeks for each store and promotion.
+
+```num_weeks```: Duration in weeks each store participated in the promotion.
+
+---
+
+## 📐 Statistical Testing
+
+### Step 2: T-Tests for Continuous Metric
+To assess the effectiveness of each promotion, pairwise two-sample t-tests were performed:
+
+Each pair of campaigns was compared using a 99% confidence level (α = 0.01) due to the multiple testing problem.
+The tests were carried out using the Evan Miller A/B Test Calculator.
+Hypotheses:
+
+#### Test 1: Promotion 1 vs Promotion 2
+
+H₀: No significant difference in mean sales
+
+H₁: A significant difference exists
+
+#### Test 2: Promotion 1 vs Promotion 3
+
+H₀: No significant difference in mean sales
+
+H₁: A significant difference exists
+
+#### Test 3: Promotion 2 vs Promotion 3
+
+H₀: No significant difference in mean sales
+
+H₁: A significant difference exists
+
+---
+
+## 📊 Results
+
+Comparison	p-value	Statistically Significant?	Interpretation
+### Promotion 1 vs Promotion 2
+0.00128	✅ Yes (p < 0.01)	Promotion 1 leads to significantly higher sales
+
+### Promotion 1 vs Promotion 3	
+> 0.01	❌ No	No statistically significant difference
+
+### Promotion 2 vs Promotion 3	
+~0.01	⚠️ Borderline	Not significant, but close to threshold – further testing advised
+
+## Conclusion: 
+**Promotion 1** is the most effective campaign, with statistically higher sales compared to Promotion 2. No clear advantage was observed between Promotions 1 and 3 or 2 and 3.
+
+---
+
+## ✅ Recommendation
+
+Based on statistical testing, Promotion 1 should be rolled out across all locations, as it produced significantly higher sales than Promotion 2 and showed no downside compared to Promotion 3. Although the difference between Promotion 2 and Promotion 3 was not statistically significant, the result was close to the 0.01 threshold, suggesting potential value in re-running the test with more data.
+
+---
+
+## Tools Used
+
+Google BigQuery (SQL)
+
+Evan Miller's A/B Test Calculator – t-test for continuous data
+
