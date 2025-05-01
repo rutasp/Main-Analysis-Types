@@ -82,14 +82,12 @@ H₁: A significant difference exists
 ## 📊 Results
 
 Comparison	p-value	Statistically Significant?	Interpretation
-### Promotion 1 vs Promotion 2
-0.00128	✅ Yes (p < 0.01)	Promotion 1 leads to significantly higher sales
 
-### Promotion 1 vs Promotion 3	
-> 0.01	❌ No	No statistically significant difference
+**Promotion 1 vs Promotion 2** 0.00128	✅ Yes (p < 0.01)	Promotion 1 leads to significantly higher sales
 
-### Promotion 2 vs Promotion 3	
-~0.01	⚠️ Borderline	Not significant, but close to threshold – further testing advised
+**Promotion 1 vs Promotion 3**	> 0.01	❌ No	No statistically significant difference
+
+**Promotion 2 vs Promotion 3** ~0.01	⚠️ Borderline	Not significant, but close to threshold – further testing advised
 
 ## Conclusion: 
 **Promotion 1** is the most effective campaign, with statistically higher sales compared to Promotion 2. No clear advantage was observed between Promotions 1 and 3 or 2 and 3.
