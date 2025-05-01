@@ -1,5 +1,5 @@
 # Main-Analysis-Types
-Key analysis types in customer behavior, e-commerce, and modeling, including retention, cohorts, RFM, CLV, funnel analysis, A/B testing, and regression models.
+This repository contains projects and materials from the "Main Analysis Types" module of the Turing College Data Analytics program. Key analysis types in customer behavior, e-commerce, and modeling, including retention, cohorts, RFM, CLV, funnel analysis, A/B testing, and regression models.
 
 ▶︎ Completed topics
 
